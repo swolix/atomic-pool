@@ -6,7 +6,7 @@ use core::cell::UnsafeCell;
 use core::hash::{Hash, Hasher};
 use core::mem::MaybeUninit;
 use core::ops::{Deref, DerefMut};
-use core::sync::atomic::AtomicU32;
+use atomic_polyfill::AtomicU32;
 use core::{cmp, mem, ptr::NonNull};
 
 use crate::atomic_bitset::AtomicBitset;
